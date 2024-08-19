@@ -1,0 +1,46 @@
+.eye {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  animation: closeEye 1s forwards;
+}
+
+.pupil {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes closeEye {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes openEye {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.eye.closed {
+  animation: closeEye 1s forwards;
+}
+.eye.opened {
+  animation: openEye 1s forwards;
+}
