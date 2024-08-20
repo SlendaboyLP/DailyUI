@@ -7,7 +7,7 @@ import StartPage from "./StartPage";
 export default function LandingPage() {
   return (
     <>
-      <div className="-z-50 h-screen w-screen bg-gradient-to-tr from-purple-400 to-cyan-300 fixed bg-fixed"></div>
+      <div className="-z-50 h-screen w-screen bg-gradient-to-tr from-purple-400 to-cyan-300   fixed bg-fixed "></div>
       <main className="w-screen h-screen flex flex-col">
         <Navigation></Navigation>
 
